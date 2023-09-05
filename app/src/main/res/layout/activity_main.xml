@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="411dp"
+                android:layout_height="200dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.471"
+                tools:srcCompat="@drawable/mario_teguh" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:text="Mario Teguh dan Istri Dipolisikan atas Dugaan Penipuan & Penggelapan Rp5 M"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="16dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/txt_content_news"
+                android:text="      Mario Teguh dilaporkan sejak Juni lalu karena dituding melakukan penggelapan uang sebesar Rp5 miliar.
+                Pihak kepolisian pun kini tengah mendalami kasus dugaan penipuan dan penggelapan ini. \n&quot;Memang kami di bulan lalu, tanggal 19 Juni 2023, sudah membuat LP terhadap pada seorang yang berinisial MT dan kemudian LP-nya dengan nomor 3505 yang saat ini tengah didalami oleh rekan-rekan Polda Metro Jaya,&quot; kata Djamaludin Koedoeboen, kuasa hukum pelapor, saat ditemui di Polda Metro Jaya, Kamis (13/7).
+
+\n      &quot;Dugaan penipuan dan penggelapan, kurang lebih Rp5 miliar,&quot; lanjutnya mengutip detikcom.
+
+
+
+Mario Teguh dilaporkan setelah dinilai tidak menjalankan kerja sama sesuai dengan perjanjian.
+
+Ia dijadikan sebagai brand ambassador oleh sang pelapor. Pelapor pun berharap akan mendapatkan untung besar setelah menjadikan Mario Teguh sebagai BA-nya.
+
+
+\n      &quot;Rencananya, minggu depan baru klien kami dimintai keterangannya. Ada janji yang bersangkutan untuk meng-up skin care atau bisnis dari klien kami yang pada akhirnya itu tidak dilakukan sehingga klien kami mengalami kerugian cukup besar dan menggelontorkan sejumlah uang kepada yang bersangkutan sejumlah kurang lebih Rp5 miliar,&quot; papar Djamaludin.
+
+\n      &quot;Beliau selaku BA sekaligus juga istrinya. Jadi kita ada dua terlapor di sini. Yang bersangkutan dengan istrinya,&quot; tambahnya.
+
+mario teguhmario teguh/ Foto: Instagram @linnateguh
+
+Mario Teguh disebut telah disomasi sebanyak tiga kali namun tak mendapat tanggapan. Hingga akhirnya pelapor memutuskan untuk membuat laporan polisi.
+
+\n      &quot;Kita sudah mensomasi yang bersangkutan tiga kali, tapi tidak ada tanggapan dari yang bersangkutan. Maka dari itu dengan terpaksa lah kita melakukan LP ini,&quot; kata sang pengacara."/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        android:text="Sebelumnya"
+        android:id="@+id/btn_prev"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Sebelumnya"
+        android:id="@+id/btn_next"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
